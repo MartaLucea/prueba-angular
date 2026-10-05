@@ -1,1 +1,4 @@
-<p>{{name}}</p>
+<button [class.active]="selected()" (click)="onSelectUser()">
+    <img [src]='imatgePath' [alt]="user().name" > 
+    <span>{{user().name}}</span>
+  </button> 
