@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { find, findIndex } from 'rxjs';
 
 @Component({
   imports: [],
@@ -51,8 +52,11 @@ export class TasksComponent {
     dueDate: '2026-10-16'
   }
 ]
-  /*isSameUser(taskUserId: string): boolean{
-    return this.user()
-  }
-*/
+  
+isSameUser(userId: string): boolean{
+  selectedUser: User
+
+  return selectedUser()===
+}
+
 }

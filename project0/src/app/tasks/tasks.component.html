@@ -1,22 +1,14 @@
-<section>
-  <div>
-    <h1>Juan's tasks</h1>
-    <button>Add Task</button>
-  </div>
-  <div>
-    <h1>Task 1</h1>
-    <h3>day</h3>
-    <div class="task-card">
-      <!--@for (task of taskList; track task.id){
-        @if (isSameUser(task.userId)) {
-          <h3>{{task.title}}</h3>
-          <p>{{task.dueDate}}</p>
-          <p>{{task.summary}}</p>
-          <p>{{task.</p>
-        }
+
+  <div class="task-card">
+    @for (task of taskList; track task.id){
+      @if (isSameUser(task.userId)) {
+        <h3>{{task.title}}</h3>
+        <p class="task-date">{{task.dueDate}}</p>
+        <p class="task-description">{{task.summary}}</p>
+        <div class="task-actions">
+          <button class="complete-btn">Complete</button>
+        </div>
       }
-    -->
-    </div>
-    <button>Complete</button>
+    }
   </div>
-</section>
+
